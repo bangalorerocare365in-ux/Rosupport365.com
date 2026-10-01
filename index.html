@@ -265,7 +265,15 @@ section{padding:84px 0}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .field{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
 .field label{font-size:.83rem;font-weight:600;color:var(--coffee);letter-spacing:.02em}
-background-color: #ffffff !important;
+.field input, .field select, .field textarea {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #999 !important;
+    padding: 10px !important;
+    display: block !important;
+    width: 100% !important;
+}
+  background-color: #ffffff !important;
 color: #000000 !important;
 border: 1px solid #ccc !important;
   .field input,.field select,.field textarea{
