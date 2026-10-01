@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>RO SUPPORT 365 | Water Purifier Repair Service</title>
-
-<meta name="description" content="RO SUPPORT 365 - Water Purifier Repair & Service. RO repair, filter replacement, leakage fixing and maintenance service.">
-
-<style>
 *{
     margin:0;
     padding:0;
@@ -17,123 +6,137 @@
 }
 
 body{
-    background:#f5faff;
-    color:#12345b;
+    background:#f4fbff;
+    color:#12345a;
 }
 
-.hero{
-    min-height:100vh;
-    background:linear-gradient(135deg,#ffffff,#e8f6ff);
+
+/* HEADER */
+
+header{
+    height:80px;
+    padding:0 7%;
+    background:white;
+
     display:flex;
     align-items:center;
-    justify-content:center;
-    padding:30px 15px;
-}
+    justify-content:space-between;
 
-.container{
-    width:100%;
-    max-width:1100px;
-    background:white;
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:0 10px 40px rgba(0,80,150,.15);
-}
+    box-shadow:0 3px 20px rgba(0,80,150,.10);
 
-.header{
-    padding:35px 30px 20px;
-    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
 .logo{
-    display:inline-block;
-    background:#087dcc;
-    color:white;
-    padding:10px 22px;
-    border-radius:12px;
-    font-size:18px;
-    font-weight:bold;
-    letter-spacing:1px;
-}
-
-.header h1{
-    font-size:48px;
+    font-size:23px;
+    font-weight:900;
     color:#07529b;
-    margin-top:18px;
 }
 
-.header h1 span{
-    color:#09a7e8;
+.logo span{
+    color:#08a9e8;
 }
 
-.header p{
-    font-size:21px;
-    margin-top:10px;
-    color:#345;
+nav{
+    display:flex;
+    gap:30px;
 }
 
-.main{
+nav a{
+    color:#12345a;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#079ee0;
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:650px;
+
+    padding:70px 7%;
+
     display:flex;
     align-items:center;
-    gap:30px;
-    padding:30px 45px 50px;
+    gap:60px;
+
+    background:
+    radial-gradient(circle at 90% 20%,#bdeeff,transparent 30%),
+    linear-gradient(135deg,#ffffff,#e8f8ff);
 }
 
-.left{
+.hero-text{
     flex:1;
 }
 
-.left h2{
-    font-size:40px;
-    color:#07529b;
-    margin-bottom:15px;
-}
+.badge{
+    display:inline-block;
 
-.left h2 span{
-    color:#09a7e8;
-}
+    background:#dff5ff;
+    color:#007ac5;
 
-.left .tagline{
-    font-size:20px;
-    line-height:1.6;
-    margin-bottom:25px;
-}
+    padding:9px 18px;
 
-.services{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-    margin-bottom:28px;
-}
+    border-radius:30px;
 
-.service{
-    background:#eef8ff;
-    border-left:5px solid #0788d8;
-    padding:15px;
-    border-radius:10px;
     font-weight:bold;
+    font-size:13px;
+
+    margin-bottom:20px;
 }
 
-.service small{
-    display:block;
-    margin-top:5px;
-    color:#666;
-    font-weight:normal;
+.hero h1{
+    font-size:58px;
+    line-height:1.05;
+    color:#064b91;
 }
+
+.hero h1 span{
+    display:block;
+    color:#09a9e8;
+}
+
+.hero p{
+    font-size:19px;
+    line-height:1.7;
+    color:#536b80;
+
+    max-width:620px;
+
+    margin:25px 0;
+}
+
+
+/* BUTTONS */
 
 .buttons{
     display:flex;
-    gap:12px;
+    gap:15px;
     flex-wrap:wrap;
 }
 
 .btn{
-    text-decoration:none;
-    padding:16px 28px;
-    border-radius:50px;
-    font-size:18px;
-    font-weight:bold;
     display:inline-block;
-    transition:.2s;
+
+    text-decoration:none;
+
+    padding:15px 27px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 .call{
@@ -142,282 +145,509 @@ body{
 }
 
 .whatsapp{
-    background:#18b85a;
+    background:#18b95c;
     color:white;
 }
 
-.btn:hover{
-    transform:translateY(-2px);
-    opacity:.9;
+.primary{
+    background:#079ddd;
+    color:white;
 }
 
-.right{
-    flex:0 0 40%;
+
+/* HERO IMAGE */
+
+.hero-image{
+    flex:1;
+
+    position:relative;
+
     text-align:center;
 }
 
-.ro-box{
-    background:linear-gradient(145deg,#078bd7,#064d9a);
-    border-radius:25px;
-    padding:35px 20px;
-    color:white;
-    box-shadow:0 15px 30px rgba(0,70,150,.2);
-}
+.hero-image img{
+    width:100%;
+    max-width:520px;
 
-.water-drop{
-    font-size:90px;
-}
-
-.ro-box h3{
-    font-size:30px;
-    margin:10px 0;
-}
-
-.ro-box p{
-    font-size:18px;
-    line-height:1.5;
-}
-
-.badge{
-    display:inline-block;
-    margin-top:20px;
-    background:#fff;
-    color:#07529b;
-    padding:10px 20px;
     border-radius:30px;
+
+    box-shadow:
+    0 25px 60px rgba(0,80,150,.20);
+}
+
+.floating-card{
+    position:absolute;
+
+    bottom:25px;
+    left:20px;
+
+    background:white;
+
+    padding:17px 25px;
+
+    border-radius:15px;
+
+    color:#07529b;
+
+    font-size:20px;
+    font-weight:bold;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.floating-card small{
+    display:block;
+    color:#08a5e2;
+    font-size:13px;
+    margin-top:5px;
+}
+
+
+/* ABOUT */
+
+.about{
+    padding:90px 7%;
+
+    display:flex;
+    align-items:center;
+
+    gap:70px;
+
+    background:white;
+}
+
+.about-image,
+.about-text{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,70,140,.18);
+}
+
+.small-title{
+    color:#08a4e1;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.about h2{
+    font-size:42px;
+    color:#07529b;
+    margin:15px 0;
+}
+
+.about h2 span{
+    color:#08a5e3;
+}
+
+.about p{
+    line-height:1.8;
+    color:#617488;
+    font-size:17px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:13px;
+
+    margin:25px 0;
+}
+
+.features div{
+    background:#effaff;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    color:#07529b;
+
     font-weight:bold;
 }
 
-.brands{
-    background:#07529b;
-    color:white;
-    text-align:center;
-    padding:25px 15px;
+
+/* SERVICES */
+
+.service-section{
+    padding:80px 7%;
 }
 
-.brands h3{
-    font-size:25px;
-    margin-bottom:15px;
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+
+    color:#08a5e3;
+    font-weight:bold;
+}
+
+.section-title h2{
+    color:#07529b;
+    font-size:40px;
+    margin-top:10px;
+}
+
+.section-title span{
+    color:#08a5e3;
+}
+
+.service-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+}
+
+.service-card{
+    background:white;
+
+    padding:30px 20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,70,140,.10);
+
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    width:65px;
+    height:65px;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#e3f7ff;
+
+    font-size:30px;
+}
+
+.service-card h3{
+    margin:17px 0 10px;
+    color:#07529b;
+}
+
+.service-card p{
+    color:#718196;
+    line-height:1.5;
+}
+
+
+/* BRANDS */
+
+.brands{
+    padding:50px 7%;
+
+    text-align:center;
+
+    background:#07529b;
+
+    color:white;
+}
+
+.brands h2{
+    margin-bottom:25px;
 }
 
 .brand-list{
     display:flex;
+
     justify-content:center;
+
     flex-wrap:wrap;
+
     gap:12px;
 }
 
-.brand{
+.brand-list span{
     background:white;
     color:#07529b;
-    padding:9px 17px;
-    border-radius:20px;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
     font-weight:bold;
 }
 
-.footer{
-    text-align:center;
-    padding:20px;
-    background:#033c73;
+
+/* CONTACT */
+
+.contact{
+    padding:60px 7%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+    background:
+    linear-gradient(110deg,#08a8e6,#07529b);
+
     color:white;
 }
 
-.footer strong{
-    color:#42c6ff;
+.contact h2{
+    font-size:35px;
 }
 
-@media(max-width:800px){
+.contact p{
+    margin-top:8px;
+}
 
-    .header h1{
-        font-size:34px;
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+
+    padding:35px;
+
+    background:#032f5d;
+
+    color:white;
+}
+
+footer .logo{
+    color:white;
+}
+
+footer .logo span{
+    color:#25c0ff;
+}
+
+footer p{
+    margin-top:10px;
+}
+
+.copyright{
+    font-size:13px;
+    opacity:.7;
+}
+
+
+/* SERVICES PAGE */
+
+.page-banner{
+    text-align:center;
+
+    padding:100px 20px;
+
+    background:
+    linear-gradient(135deg,#07529b,#08a9e8);
+
+    color:white;
+}
+
+.page-banner .badge{
+    background:white;
+    color:#07529b;
+}
+
+.page-banner h1{
+    font-size:55px;
+}
+
+.page-banner h1 span{
+    color:#b9f0ff;
+}
+
+.page-banner p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+
+.all-services{
+    padding:80px 7%;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+}
+
+.big-service{
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,70,140,.10);
+
+    border-left:6px solid #08a5e3;
+}
+
+.big-icon{
+    min-width:70px;
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    background:#e6f8ff;
+
+    border-radius:50%;
+
+    font-size:32px;
+}
+
+.big-service h2{
+    color:#07529b;
+    margin-bottom:8px;
+}
+
+.big-service p{
+    color:#6c7e91;
+    line-height:1.5;
+}
+
+
+/* CTA */
+
+.cta{
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:#e9f9ff;
+}
+
+.cta h2{
+    font-size:40px;
+    color:#07529b;
+}
+
+.cta p{
+    margin:15px 0 25px;
+    color:#60758a;
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    header{
+        padding:0 20px;
     }
 
-    .header p{
-        font-size:17px;
+    nav{
+        gap:12px;
     }
 
-    .main{
+    nav a{
+        font-size:13px;
+    }
+
+    .hero{
         flex-direction:column;
-        padding:25px 20px 35px;
+        padding:50px 20px;
+        text-align:center;
     }
 
-    .left h2{
-        font-size:31px;
-    }
-
-    .right{
-        width:100%;
-    }
-
-    .services{
-        grid-template-columns:1fr;
+    .hero h1{
+        font-size:42px;
     }
 
     .buttons{
         justify-content:center;
     }
 
-    .btn{
+    .hero-image{
         width:100%;
+    }
+
+    .about{
+        flex-direction:column;
+        padding:60px 20px;
+    }
+
+    .about h2{
+        font-size:34px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact{
+        flex-direction:column;
         text-align:center;
     }
+
+    .all-services{
+        grid-template-columns:1fr;
+        padding:50px 20px;
+    }
+
+    .page-banner h1{
+        font-size:42px;
+    }
 }
-</style>
-</head>
-
-<body>
-
-<section class="hero">
-
-<div class="container">
-
-    <!-- HEADER -->
-    <div class="header">
-
-        <div class="logo">
-            💧 RO SUPPORT 365
-        </div>
-
-        <h1>
-            RO <span>SUPPORT 365</span>
-        </h1>
-
-        <p>
-            Water Purifier Repair & Service
-        </p>
-
-    </div>
 
 
-    <!-- MAIN BANNER -->
-    <div class="main">
+@media(max-width:550px){
 
-        <div class="left">
+    .logo{
+        font-size:17px;
+    }
 
-            <h2>
-                Water Purifier<br>
-                <span>Repair & Service</span>
-            </h2>
+    nav{
+        gap:8px;
+    }
 
-            <p class="tagline">
-                Fast & Reliable RO Service at Your Doorstep.
-                We provide repair, maintenance, filter replacement
-                and leakage fixing for water purifiers.
-            </p>
+    .hero h1{
+        font-size:35px;
+    }
 
+    .service-grid{
+        grid-template-columns:1fr;
+    }
 
-            <div class="services">
+    .features{
+        grid-template-columns:1fr;
+    }
 
-                <div class="service">
-                    🔧 RO Repair
-                    <small>Professional Service</small>
-                </div>
+    .floating-card{
+        left:5px;
+        bottom:10px;
+        font-size:15px;
+    }
 
-                <div class="service">
-                    ⚙️ Maintenance
-                    <small>Regular Service</small>
-                </div>
-
-                <div class="service">
-                    💧 Filter Replacement
-                    <small>Quality Spare Parts</small>
-                </div>
-
-                <div class="service">
-                    🔧 Leakage Fixing
-                    <small>Quick Solution</small>
-                </div>
-
-            </div>
-
-
-            <div class="buttons">
-
-                <a class="btn call"
-                   href="tel:07795695494">
-                    📞 Call Now
-                </a>
-
-                <a class="btn whatsapp"
-                   href="https://wa.me/917795695494"
-                   target="_blank">
-                    💬 WhatsApp
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- RIGHT SIDE -->
-        <div class="right">
-
-            <div class="ro-box">
-
-                <div class="water-drop">💧</div>
-
-                <h3>
-                    RO SUPPORT 365
-                </h3>
-
-                <p>
-                    Your Water Purifier<br>
-                    Our Responsibility
-                </p>
-
-                <div class="badge">
-                    24/7 Customer Support
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- BRANDS -->
-    <div class="brands">
-
-        <h3>
-            We Service All Major Brands
-        </h3>
-
-        <div class="brand-list">
-
-            <div class="brand">KENT</div>
-            <div class="brand">Aquaguard</div>
-            <div class="brand">Livpure</div>
-            <div class="brand">Havells</div>
-            <div class="brand">Pureit</div>
-            <div class="brand">AO Smith</div>
-            <div class="brand">& More</div>
-
-        </div>
-
-    </div>
-
-
-    <!-- FOOTER -->
-    <div class="footer">
-
-        <p>
-            📞 <strong>07795695494</strong>
-        </p>
-
-        <p style="margin-top:8px;">
-            RO SUPPORT 365 | Water Purifier Repair Service
-        </p>
-
-        <p style="margin-top:8px;font-size:13px;">
-            © 2026 RO SUPPORT 365. All Rights Reserved.
-        </p>
-
-    </div>
-
-</div>
-
-</section>
-
-</body>
-</html>
+    .contact h2{
+        font-size:28px;
+    }
+}
