@@ -1,235 +1,183 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RO Support 365 - वाटर प्यूरिफायर रिपेयर और सर्विस</title>
+    <title>RO Support 365 - Water Purifier Repair & Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .banner-box {
+        .custom-banner-box {
             position: relative;
             width: 100%;
             height: 420px;
             overflow: hidden;
-            border-radius: 1.5rem;
-            background: #ffffff;
-            box-shadow: 0 15px 35px rgba(0, 119, 255, 0.1);
+            border-radius: 2rem;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+            box-shadow: 0 20px 40px rgba(0, 119, 255, 0.12);
+            border: 2px solid #bae6fd;
         }
-        .banner-slide-item {
+        .banner-slide-img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             opacity: 0;
-            transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            transform: scale(0.95);
         }
-        .banner-slide-item.active {
+        .banner-slide-img.active {
             opacity: 1;
+            transform: scale(1);
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 via-white to-sky-50 text-slate-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans">
 
-    <!-- टॉप अनाउंसमेंट बार -->
-    <div class="bg-blue-600 text-white text-xs sm:text-sm py-2.5 px-4 text-center font-bold tracking-wide shadow-sm">
-        <i class="fa-solid fa-phone-volume mr-2"></i> तुरंत होम सर्विस उपलब्ध! कॉल करें: <a href="tel:+9107795695494" class="underline">07795695494</a>
+    <!-- Top Emergency Bar -->
+    <div class="bg-blue-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-bold tracking-wide">
+        <i class="fa-solid fa-bolt mr-2"></i> Fast Doorstep Service Available! Call Now: <a href="tel:+9107795695494" class="underline text-yellow-300">07795695494</a>
     </div>
 
-    <!-- नेविगेशन हेडर -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-blue-100 shadow-sm">
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-blue-600 to-sky-400 flex items-center justify-center text-white shadow-md shadow-blue-500/30">
+                <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-500/30">
                     <i class="fa-solid fa-droplet text-xl"></i>
                 </div>
-                <div>
-                    <span class="text-xl font-black bg-gradient-to-r from-blue-700 to-sky-600 bg-clip-text text-transparent block">RO Support 365</span>
-                    <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">वाटर प्यूरिफायर एक्सपर्ट्स</span>
-                </div>
+                <span class="text-xl font-black text-blue-600 tracking-tight">RO Support 365</span>
             </div>
             <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-600">
-                <a href="#home" class="hover:text-blue-600 transition">होम</a>
-                <a href="#services" class="hover:text-blue-600 transition">सेवाएं</a>
-                <a href="#why-us" class="hover:text-blue-600 transition">हमें क्यों चुनें</a>
-                <a href="#contact" class="hover:text-blue-600 transition">संपर्क करें</a>
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </nav>
             <div>
-                <a href="tel:+9107795695494" class="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white px-5 py-2.5 rounded-xl font-bold shadow-md shadow-blue-500/20 transition flex items-center gap-2">
-                    <i class="fa-solid fa-phone text-sm"></i> कॉल नाउ
+                <a href="tel:+9107795695494" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-bold shadow-md transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Now
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- हीरो सेक्शन और स्लाइडर बैनर -->
-    <section id="home" class="py-16 lg:py-24 px-6 lg:px-16 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-        
-        <!-- लेफ्ट कंटेंट -->
-        <div class="flex-1 text-center lg:text-left">
-            <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold mb-6 shadow-sm">
-                <span class="w-2.5 h-2.5 bg-blue-600 rounded-full animate-ping"></span>
-                365 दिन खुली सेवा • होम सर्विस उपलब्ध
-            </div>
-
-            <h2 class="text-sm font-extrabold text-blue-600 uppercase tracking-widest mb-2">RO Support 365</h2>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-                बेस्ट वाटर प्यूरिफायर <span class="bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">रिपेयर एवं सर्विस</span>
-            </h1>
-
-            <p class="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                एक्वागार्ड (Aquaguard) और सभी ब्रांड के वॉटर प्यूरिफायर की रिपेयरिंग, फिल्टर बदलना, नई इंस्टॉलेशन और संपूर्ण मेंटेनेंस अब आपके घर पर।
-            </p>
-
-            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-                <a href="#contact" class="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-blue-500/25 transition flex items-center gap-2">
-                    <i class="fa-solid fa-calendar-check"></i> सर्विस बुक करें
-                </a>
-                <a href="https://wa.me/9107795695494" target="_blank" class="bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-700 hover:to-teal-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-500/25 transition flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-xl"></i> व्हाट्सएप चैट
-                </a>
-            </div>
-
-            <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-600 font-semibold">
-                <span><i class="fa-solid fa-check text-blue-600 mr-1.5"></i> ओरिजिनल पार्ट्स</span>
-                <span><i class="fa-solid fa-check text-blue-600 mr-1.5"></i> एक्सपर्ट टेक्निशियन</span>
-                <span><i class="fa-solid fa-check text-blue-600 mr-1.5"></i> फास्ट रिस्पॉन्स</span>
-            </div>
-        </div>
-
-        <!-- राइट साइड: लाइट डिज़ाइन वाला शानदार स्लाइडर बैनर -->
-        <div class="flex-1 w-full max-w-lg">
-            <div class="bg-white/90 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-blue-100 flex flex-col items-center">
+    <!-- Hero Section and Banner Slider -->
+    <section id="home" class="py-16 lg:py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Content Area -->
+            <div class="lg:col-span-7 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-xs font-extrabold mb-6">
+                    <span class="w-2.5 h-2.5 bg-blue-600 rounded-full animate-pulse"></span>
+                    Available 365 Days • Water Purifier Expert
+                </div>
                 
-                <div class="w-full flex items-center justify-between mb-4">
-                    <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full font-bold border border-blue-200">
-                        <i class="fa-solid fa-shield-halved mr-1"></i> 100% जेन्युइन मॉडल्स
-                    </span>
-                    <span class="text-xs text-slate-500 font-bold tracking-wide">एक्वागार्ड सीरीज</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight mb-6">
+                    Best Water Purifier <span class="text-blue-600">Repair & Service</span>
+                </h1>
+
+                <p class="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Professional repair, filter replacement, and complete maintenance service for Aquaguard and all other brands right at your doorstep.
+                </p>
+
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <a href="tel:+9107795695494" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-7 py-4 rounded-xl shadow-lg shadow-blue-500/25 transition flex items-center gap-3 text-lg">
+                        <i class="fa-solid fa-phone"></i> Book Service
+                    </a>
+                    <a href="https://wa.me/9107795695494" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-4 rounded-xl shadow-lg shadow-emerald-500/25 transition flex items-center gap-3 text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp Chat
+                    </a>
                 </div>
 
-                <!-- बैनर इमेज स्लाइडर -->
-                <div class="banner-box border border-slate-100">
-                    <div class="banner-slide-item active">
-                        <img src="1000351750_2.jpg" alt="Aquaguard Model 1" class="max-h-[350px] w-auto object-contain drop-shadow-md">
-                    </div>
-                    <div class="banner-slide-item">
-                        <img src="1000351752_2.jpg" alt="Aquaguard Model 2" class="max-h-[350px] w-auto object-contain drop-shadow-md">
-                    </div>
-                    <div class="banner-slide-item">
-                        <img src="1000351751_2.jpg" alt="Aquaguard Model 3" class="max-h-[350px] w-auto object-contain drop-shadow-md">
-                    </div>
-                </div>
-
-                <div class="text-center mt-5">
-                    <h3 class="text-base font-extrabold text-slate-900">एडवांस्ड वॉटर प्यूरिफायर सिस्टम</h3>
-                    <p class="text-xs text-blue-600 mt-1 font-bold">रिपेयर • सर्विस • फिल्टर रिप्लेसमेंट • एएमसी</p>
+                <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-600 font-bold">
+                    <span><i class="fa-solid fa-check text-blue-600 mr-1"></i> 100% Genuine Parts</span>
+                    <span><i class="fa-solid fa-check text-blue-600 mr-1"></i> Expert Technicians</span>
                 </div>
             </div>
-        </div>
 
-    </section>
-
-    <!-- सर्विसेज सेक्शन -->
-    <section id="services" class="py-20 bg-white border-t border-slate-100 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-black text-slate-900 mb-4">हमारी सेवाएं</h2>
-                <p class="text-slate-600 max-w-xl mx-auto font-normal">सभी प्रकार के वॉटर प्यूरिफायर की समस्याओं के लिए भरोसेमंद समाधान।</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gradient-to-b from-blue-50/50 to-white p-8 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-gradient-to-tr from-blue-600 to-sky-400 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-blue-500/20">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
+            <!-- Right Side: Custom Photo Slider Banner -->
+            <div class="lg:col-span-5 w-full">
+                <div class="bg-white p-5 rounded-3xl shadow-xl border border-slate-200">
+                    <div class="flex items-center justify-between mb-3 px-2">
+                        <span class="text-xs font-bold bg-blue-50 text-blue-700 px-3 py-1 rounded-full border border-blue-200">
+                            <i class="fa-solid fa-shield-halved mr-1"></i> Branded Models
+                        </span>
+                        <span class="text-xs font-bold text-slate-400">RO Support 365</span>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">आरओ रिपेयरिंग और सर्विस</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">पानी लीकेज, मोटर की समस्या, बिजली संबंधी खराबी और स्वाद की समस्याओं का घर बैठे समाधान।</p>
-                </div>
 
-                <div class="bg-gradient-to-b from-blue-50/50 to-white p-8 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-gradient-to-tr from-sky-600 to-cyan-400 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-sky-500/20">
-                        <i class="fa-solid fa-filter"></i>
+                    <!-- Slider Container -->
+                    <div class="custom-banner-box">
+                        <div class="banner-slide-img active">
+                            <img src="1000351750_2.jpg" alt="Aquaguard Model 1" class="max-h-[350px] w-auto object-contain drop-shadow-lg">
+                        </div>
+                        <div class="banner-slide-img">
+                            <img src="1000351752_2.jpg" alt="Aquaguard Model 2" class="max-h-[350px] w-auto object-contain drop-shadow-lg">
+                        </div>
+                        <div class="banner-slide-img">
+                            <img src="1000351751_2.jpg" alt="Aquaguard Model 3" class="max-h-[350px] w-auto object-contain drop-shadow-lg">
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">फिल्टर और पार्ट्स बदलना</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">100% ओरिजिनल सेडिमेंट फिल्टर, कार्बन फिल्टर, यूवी लैंप और हाई परफॉरमेंस RO मेंब्रेन उपलब्ध।</p>
-                </div>
 
-                <div class="bg-gradient-to-b from-blue-50/50 to-white p-8 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-gradient-to-tr from-indigo-600 to-blue-500 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-indigo-500/20">
-                        <i class="fa-solid fa-house-chimney-medical"></i>
+                    <div class="text-center mt-4">
+                        <h3 class="font-black text-slate-900 text-base">Aquaguard Advanced Series</h3>
+                        <p class="text-xs text-blue-600 font-bold mt-0.5">Repair • Filter Replacement • AMC Services</p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">इंस्टॉलेशन और AMC</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">नया RO लगवाने या पूरे साल की देखभाल (AMC) के लिए हमारे प्रमाणित एक्सपर्ट्स से संपर्क करें।</p>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- क्यों चुनें सेक्शन -->
-    <section id="why-us" class="py-20 bg-slate-50 border-t border-slate-200 px-6">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl lg:text-4xl font-black text-slate-900 mb-4">हमें क्यों चुनें?</h2>
-            <p class="text-slate-600 max-w-xl mx-auto mb-16 font-normal">अनुभवी और भरोसेमंद वॉटर प्यूरिफायर सर्विस पार्टनर।</p>
-
-            <div class="grid md:grid-cols-4 gap-8 text-left">
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-clock"></i></div>
-                    <h4 class="font-bold text-lg text-slate-900 mb-2">365 दिन सेवा</h4>
-                    <p class="text-slate-600 text-sm">साल के सातों दिन बिना छुट्टी के सेवाएं उपलब्ध।</p>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white border-t border-slate-200 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-black text-slate-900 mb-3">Our Core Services</h2>
+            <p class="text-slate-600">Reliable solutions for all your water purifier problems.</p>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm text-left">
+                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-user-shield"></i></div>
-                    <h4 class="font-bold text-lg text-slate-900 mb-2">एक्सपर्ट टेक्निशियन</h4>
-                    <p class="text-slate-600 text-sm">वेरीफाइड, प्रशिक्षित और पेशेवर रिपेयर मैन।</p>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">RO Repairing</h3>
+                <p class="text-slate-600 text-sm">Immediate doorstep solutions for leakage, motor issues, and purification errors.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm text-left">
+                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow">
+                    <i class="fa-solid fa-filter"></i>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-bolt"></i></div>
-                    <h4 class="font-bold text-lg text-slate-900 mb-2">फास्ट होम सर्विस</h4>
-                    <p class="text-slate-600 text-sm">आपके घर पर तुरंत और सटीक समाधान।</p>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Filters & Membrane</h3>
+                <p class="text-slate-600 text-sm">Timely replacement of sediment filters, carbon filters, and high-performance RO membranes.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm text-left">
+                <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow">
+                    <i class="fa-solid fa-house-chimney-medical"></i>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-indian-rupee-sign"></i></div>
-                    <h4 class="font-bold text-lg text-slate-900 mb-2">किफायती दाम</h4>
-                    <p class="text-slate-600 text-sm">पारदर्शी और जेब पर भारी न पड़ने वाले चार्जेस।</p>
-                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Installation & AMC</h3>
+                <p class="text-slate-600 text-sm">Professional new water purifier installation and affordable annual maintenance contracts.</p>
             </div>
         </div>
     </section>
 
-    <!-- संपर्क सेक्शन -->
-    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl lg:text-4xl font-black text-slate-900 mb-4">आज ही अपनी सर्विस बुक करें</h2>
-        <p class="text-slate-600 mb-8 font-normal">तुरंत रिपेयर या मेंटेनेंस के लिए हमें कॉल करें या व्हाट्सएप पर मैसेज भेजें।</p>
-        <div class="flex flex-wrap justify-center gap-6">
-            <a href="tel:+9107795695494" class="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-500/25 flex items-center gap-3">
-                <i class="fa-solid fa-phone"></i> कॉल करें: 07795695494
-            </a>
-            <a href="https://wa.me/9107795695494" target="_blank" class="bg-gradient-to-r from-emerald-600 to-teal-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-emerald-500/25 flex items-center gap-3">
-                <i class="fa-brands fa-whatsapp text-2xl"></i> व्हाट्सएप चैट करें
-            </a>
-        </div>
-    </section>
-
-    <!-- फुटर -->
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center border-t border-slate-800 text-sm">
-        <p>&copy; 2026 RO Support 365. सर्वाधिकार सुरक्षित।</p>
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
+        <p>&copy; 2026 RO Support 365. All Rights Reserved. | Helpline: 07795695494</p>
     </footer>
 
-    <!-- ऑटोमैटिक स्लाइडर स्क्रिप्ट -->
+    <!-- Slider Script -->
     <script>
-        const sliderList = document.querySelectorAll('.banner-slide-item');
-        let indexNum = 0;
+        const slideElements = document.querySelectorAll('.banner-slide-img');
+        let activeIdx = 0;
         setInterval(() => {
-            sliderList[indexNum].classList.remove('active');
-            indexNum = (indexNum + 1) % sliderList.length;
-            sliderList[indexNum].classList.add('active');
-        }, 3500);
+            slideElements[activeIdx].classList.remove('active');
+            activeIdx = (activeIdx + 1) % slideElements.length;
+            slideElements[activeIdx].classList.add('active');
+        }, 3000);
     </script>
 </body>
 </html>
