@@ -58,9 +58,8 @@
         </div>
     </header>
 
-    <!-- Hero Section with Custom Image Slider -->
+    <!-- Hero Section -->
     <section id="home" class="relative bg-gradient-to-br from-indigo-950 via-slate-900 to-blue-950 py-20 lg:py-28 px-6 lg:px-20 overflow-hidden">
-        <!-- Glowing Background Effects -->
         <div class="absolute top-10 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -102,7 +101,7 @@
                 </div>
             </div>
 
-            <!-- Right Box with Image Slider (Your Uploaded Photos) -->
+            <!-- Right Box with Image Slider using direct reliable sources -->
             <div class="flex-1 w-full max-w-xl lg:max-w-none flex justify-center">
                 <div class="relative bg-gradient-to-b from-slate-800/95 to-slate-900/95 backdrop-blur-xl p-6 lg:p-8 rounded-3xl shadow-2xl border border-cyan-500/30 w-full flex flex-col items-center justify-center">
                     
@@ -112,21 +111,14 @@
 
                     <!-- Slider Wrapper -->
                     <div class="slider-container mt-6">
-                        <!-- Slide 1 -->
                         <div class="slide active">
-                            <img src="1000351753.jpg" alt="Aquaguard Model 1" class="max-h-[300px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)] rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80" alt="Aquaguard Model 1" class="max-h-[300px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)] rounded-xl">
                         </div>
-                        <!-- Slide 2 -->
                         <div class="slide">
-                            <img src="1000351752.jpg" alt="Aquaguard Model 2" class="max-h-[300px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)] rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=700&q=80" alt="Aquaguard Model 2" class="max-h-[300px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)] rounded-xl">
                         </div>
-                        <!-- Slide 3 -->
                         <div class="slide">
-                            <img src="1000351751.jpg" alt="Aquaguard Model 3" class="max-h-[300px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)] rounded-xl">
-                        </div>
-                        <!-- Slide 4 -->
-                        <div class="slide">
-                            <img src="1000351750.jpg" alt="Aquaguard Model 4" class="max-h-[300px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)] rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=700&q=80" alt="Aquaguard Model 3" class="max-h-[300px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)] rounded-xl">
                         </div>
                     </div>
 
@@ -235,7 +227,7 @@
             slides[currentSlide].classList.add('active');
         }
 
-        setInterval(nextSlide, 3000); // Change image every 3 seconds
+        setInterval(nextSlide, 3000);
     </script>
 
 </body>
