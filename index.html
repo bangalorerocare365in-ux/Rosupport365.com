@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<script>
+    (function() {
+        var originalAssign = window.location.assign;
+        var originalReplace = window.location.replace;
+        window.location.assign = function(url) {
+            if (url && url.includes('wa.me')) { console.log('Blocked WA redirect'); return; }
+            originalAssign.call(window.location, url);
+        };
+        window.location.replace = function(url) {
+            if (url && url.includes('wa.me')) { console.log('Blocked WA redirect'); return; }
+            originalReplace.call(window.location, url);
+        };
+    })();
+</script>
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RO Service Bangalore | RO Water Purifier Repair & Service</title>
 <meta name="description" content="RO Service Bangalore provides water purifier repair, RO servicing, installation, filter replacement and membrane replacement support in Bangalore. Call or WhatsApp 088840 12292.">
