@@ -25,8 +25,8 @@
 
     .hero-bg {
       background:
-        radial-gradient(circle at 85% 15%, rgba(6, 182, 212, .30), transparent 30%),
-        radial-gradient(circle at 10% 80%, rgba(37, 99, 235, .20), transparent 30%),
+        radial-gradient(circle at 85% 15%, rgba(6,182,212,.30), transparent 28%),
+        radial-gradient(circle at 10% 85%, rgba(37,99,235,.22), transparent 30%),
         linear-gradient(135deg, #eff6ff, #ecfeff, #f0fdf4);
     }
 
@@ -37,24 +37,18 @@
       color: transparent;
     }
 
-    .glass {
-      background: rgba(255, 255, 255, .78);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
+    .ro-image {
+      animation: floating 4s ease-in-out infinite;
+      filter: drop-shadow(0 25px 25px rgba(15,23,42,.25));
     }
 
-    .purifier {
-      filter: drop-shadow(0 25px 30px rgba(15, 23, 42, .25));
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
+    @keyframes floating {
       0%, 100% {
         transform: translateY(0);
       }
 
       50% {
-        transform: translateY(-12px);
+        transform: translateY(-10px);
       }
     }
   </style>
@@ -63,22 +57,25 @@
 <body class="bg-slate-50 text-slate-800">
 
 
-<!-- ======================================================
+<!-- =====================================================
      NAVBAR
-====================================================== -->
+===================================================== -->
 
 <header class="fixed top-0 left-0 right-0 z-50">
 
-  <nav class="glass border-b border-white/60 shadow-sm">
+  <nav class="bg-white/90 backdrop-blur-xl border-b border-slate-200 shadow-sm">
 
     <div class="max-w-7xl mx-auto px-5">
 
       <div class="h-20 flex items-center justify-between">
 
         <!-- LOGO -->
+
         <a href="#home" class="flex items-center gap-3">
 
-          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-400 flex items-center justify-center shadow-lg">
+          <div class="w-12 h-12 rounded-2xl
+                      bg-gradient-to-br from-blue-600 to-cyan-400
+                      flex items-center justify-center shadow-lg">
 
             <span class="text-white font-extrabold text-lg">
               RO
@@ -102,6 +99,7 @@
 
 
         <!-- DESKTOP MENU -->
+
         <div class="hidden md:flex items-center gap-7">
 
           <a href="#home"
@@ -125,17 +123,25 @@
           </a>
 
           <a href="tel:07795695494"
-             class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-bold shadow-lg transition">
+             class="bg-blue-600 hover:bg-blue-700
+                    text-white px-6 py-3 rounded-full
+                    font-bold shadow-lg transition">
+
             📞 Call Now
+
           </a>
 
         </div>
 
 
         <!-- MOBILE CALL -->
+
         <a href="tel:07795695494"
-           class="md:hidden bg-blue-600 text-white px-4 py-2 rounded-full font-bold text-sm">
+           class="md:hidden bg-blue-600 text-white
+                  px-4 py-2 rounded-full font-bold text-sm">
+
           📞 Call
+
         </a>
 
       </div>
@@ -148,33 +154,47 @@
 
 
 
-<!-- ======================================================
+<!-- =====================================================
      HERO SECTION
-     LEFT = TEXT
-     RIGHT = REAL ONLINE IMAGE
-====================================================== -->
+===================================================== -->
 
 <section id="home"
-         class="hero-bg min-h-screen pt-32 pb-16 md:pt-36 flex items-center">
+         class="hero-bg min-h-screen pt-32 pb-16
+                md:pt-36 flex items-center">
 
   <div class="max-w-7xl mx-auto px-5 w-full">
 
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="grid lg:grid-cols-2
+                gap-12 lg:gap-16
+                items-center">
 
 
-      <!-- ================= LEFT ================= -->
+      <!-- =================================================
+           LEFT SIDE
+      ================================================== -->
 
       <div class="text-center lg:text-left">
 
+
         <!-- AVAILABLE TAG -->
 
-        <div class="inline-flex items-center gap-2 bg-white border border-green-200 shadow-md px-5 py-2.5 rounded-full mb-6">
+        <div class="inline-flex items-center gap-2
+                    bg-white border border-green-200
+                    shadow-md px-5 py-2.5
+                    rounded-full mb-6">
 
           <span class="relative flex h-3 w-3">
 
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span class="animate-ping absolute
+                         inline-flex h-full w-full
+                         rounded-full bg-green-400
+                         opacity-75">
+            </span>
 
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            <span class="relative inline-flex
+                         rounded-full h-3 w-3
+                         bg-green-500">
+            </span>
 
           </span>
 
@@ -187,14 +207,22 @@
 
         <!-- COMPANY NAME -->
 
-        <p class="text-blue-600 font-extrabold uppercase tracking-[4px] text-sm mb-4">
+        <p class="text-blue-600 font-extrabold
+                  uppercase tracking-[4px]
+                  text-sm mb-4">
+
           RO Support 365
+
         </p>
 
 
         <!-- MAIN HEADING -->
 
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-slate-900">
+        <h1 class="text-4xl sm:text-5xl
+                   lg:text-6xl xl:text-7xl
+                   font-extrabold
+                   leading-tight
+                   text-slate-900">
 
           Best Water Purifier
 
@@ -207,26 +235,39 @@
 
         <!-- DESCRIPTION -->
 
-        <p class="mt-6 text-lg text-slate-600 leading-8 max-w-xl mx-auto lg:mx-0">
+        <p class="mt-6 text-lg
+                  text-slate-600
+                  leading-8
+                  max-w-xl
+                  mx-auto lg:mx-0">
 
-          Professional RO and water purifier repair service
-          at your doorstep.
+          Professional RO and water purifier
+          repair service at your doorstep.
 
-          We provide repair, maintenance, filter replacement,
-          installation and AMC services.
+          Repair, maintenance, filter replacement,
+          installation and AMC service.
 
         </p>
 
 
-        <!-- BUTTONS -->
+        <!-- THREE BUTTONS -->
 
-        <div class="flex flex-col sm:flex-row flex-wrap gap-4 mt-8 justify-center lg:justify-start">
+        <div class="flex flex-col sm:flex-row
+                    flex-wrap gap-4 mt-8
+                    justify-center lg:justify-start">
 
 
           <!-- BOOK SERVICE -->
 
           <a href="#contact"
-             class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-7 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-1 transition">
+             class="inline-flex items-center
+                    justify-center gap-2
+                    bg-blue-600 hover:bg-blue-700
+                    text-white px-7 py-4
+                    rounded-xl font-bold
+                    shadow-xl
+                    hover:-translate-y-1
+                    transition">
 
             🔧 Book Service
 
@@ -235,11 +276,19 @@
 
           <!-- WHATSAPP -->
 
-          <a href="https://wa.me/917795695494?text=Hello%20RO%20Support%20365,%20I%20need%20water%20purifier%20service."
+          <a href="https://wa.me/917795695494?text=Hello%20RO%20Support%20365%2C%20I%20need%20water%20purifier%20service."
              target="_blank"
-             class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-green-600 text-white px-7 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-1 transition">
+             class="inline-flex items-center
+                    justify-center gap-2
+                    bg-[#25D366] hover:bg-green-600
+                    text-white px-7 py-4
+                    rounded-xl font-bold
+                    shadow-xl
+                    hover:-translate-y-1
+                    transition">
 
-            <!-- WhatsApp SVG Logo -->
+
+            <!-- WhatsApp SVG -->
 
             <svg width="23"
                  height="23"
@@ -258,7 +307,14 @@
           <!-- CALL NOW -->
 
           <a href="tel:07795695494"
-             class="inline-flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white px-7 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-1 transition">
+             class="inline-flex items-center
+                    justify-center gap-2
+                    bg-slate-950 hover:bg-slate-800
+                    text-white px-7 py-4
+                    rounded-xl font-bold
+                    shadow-xl
+                    hover:-translate-y-1
+                    transition">
 
             📞 Call Now
 
@@ -271,9 +327,13 @@
         </div>
 
 
-        <!-- FEATURES -->
+        <!-- SMALL FEATURES -->
 
-        <div class="flex flex-wrap justify-center lg:justify-start gap-5 mt-8 text-sm font-semibold text-slate-600">
+        <div class="flex flex-wrap
+                    justify-center lg:justify-start
+                    gap-5 mt-8
+                    text-sm font-semibold
+                    text-slate-600">
 
           <span>✓ Doorstep Service</span>
           <span>✓ Expert Technicians</span>
@@ -286,69 +346,152 @@
 
 
       <!-- =================================================
-           RIGHT SIDE - REAL ONLINE WATER PURIFIER PHOTO
+           RIGHT SIDE
+           BIG EMPTY CARD + RO PHOTO
       ================================================== -->
 
       <div class="relative">
 
-        <!-- Glow -->
 
-        <div class="absolute -top-10 -right-10 w-44 h-44 bg-cyan-300/40 rounded-full blur-3xl"></div>
+        <!-- Decorative Glow -->
 
-        <div class="absolute -bottom-10 -left-10 w-52 h-52 bg-blue-400/30 rounded-full blur-3xl"></div>
+        <div class="absolute -top-10 -right-10
+                    w-44 h-44
+                    bg-cyan-300/40
+                    rounded-full
+                    blur-3xl">
+        </div>
+
+        <div class="absolute -bottom-10 -left-10
+                    w-52 h-52
+                    bg-blue-400/30
+                    rounded-full
+                    blur-3xl">
+        </div>
 
 
-        <!-- IMAGE BOX -->
+        <!-- =================================================
+             BIG CARD / BOX
+        ================================================== -->
 
-        <div class="relative glass rounded-[2rem] border border-white/80 shadow-2xl p-5 sm:p-8">
+        <div class="relative
+                    bg-white
+                    rounded-[2rem]
+                    border border-slate-100
+                    shadow-2xl
+                    p-5 sm:p-8">
 
 
-          <!-- BADGE -->
+          <!-- 365 DAYS BADGE -->
 
-          <div class="absolute top-5 left-5 z-20 bg-green-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg">
+          <div class="absolute top-5 left-5 z-30
+                      bg-green-500
+                      text-white
+                      px-4 py-2
+                      rounded-full
+                      text-xs sm:text-sm
+                      font-bold
+                      shadow-lg">
 
             ✓ 365 DAYS SERVICE
 
           </div>
 
 
-          <!-- IMAGE CONTAINER -->
+          <!-- =================================================
+               EMPTY CARD AREA
+               RO IMAGE EXACTLY IN CENTER
+          ================================================== -->
 
-          <div class="relative min-h-[430px] sm:min-h-[520px] rounded-[1.5rem] overflow-hidden flex items-center justify-center bg-gradient-to-br from-white via-cyan-50 to-blue-100">
+          <div class="relative
+                      w-full
+                      min-h-[430px]
+                      sm:min-h-[540px]
+                      rounded-[1.5rem]
+                      overflow-hidden
+                      flex items-center
+                      justify-center
+                      bg-gradient-to-br
+                      from-blue-50
+                      via-white
+                      to-cyan-100">
 
 
             <!-- Decorative Circle -->
 
-            <div class="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-cyan-200/50 blur-2xl"></div>
+            <div class="absolute
+                        w-72 h-72
+                        sm:w-[420px] sm:h-[420px]
+                        rounded-full
+                        bg-cyan-200/40
+                        blur-3xl">
+            </div>
 
 
             <!-- =================================================
-                 REAL INTERNET IMAGE
+                 REAL WATER PURIFIER PHOTO
 
-                 This is NOT a local file.
-                 It loads directly from Unsplash.
+                 Direct Internet Image
+                 No Local File
             ================================================== -->
 
             <img
-              src="https://images.unsplash.com/photo-1669872011181-d9166a2c5f4a?auto=format&fit=crop&w=900&q=85"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/RO%20SYSTEM.jpg?width=900"
               alt="RO Water Purifier"
-              class="purifier relative z-10 w-full h-[390px] sm:h-[470px] object-cover rounded-2xl"
+              class="ro-image
+                     relative z-10
+                     block
+                     w-auto
+                     max-w-[88%]
+                     h-[350px]
+                     sm:h-[460px]
+                     object-contain
+                     object-center"
               loading="eager"
+              decoding="async"
             >
+
+
+            <!-- Small Label -->
+
+            <div class="absolute
+                        bottom-5
+                        left-1/2
+                        -translate-x-1/2
+                        z-20
+                        bg-white/95
+                        backdrop-blur
+                        px-5 py-2
+                        rounded-full
+                        shadow-lg
+                        text-sm
+                        font-bold
+                        text-blue-700
+                        whitespace-nowrap">
+
+              Pure Water • Better Life
+
+            </div>
 
           </div>
 
 
-          <!-- IMAGE TITLE -->
+          <!-- PHOTO TITLE -->
 
           <div class="text-center mt-6">
 
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            <h2 class="text-2xl sm:text-3xl
+                       font-extrabold
+                       text-slate-900">
+
               RO Water Purifier
+
             </h2>
 
             <p class="text-slate-500 mt-2">
+
               Repair • Service • Filter • Installation • AMC
+
             </p>
 
           </div>
@@ -365,9 +508,9 @@
 
 
 
-<!-- ======================================================
-     SERVICES
-====================================================== -->
+<!-- =====================================================
+     OUR SERVICES
+===================================================== -->
 
 <section id="services" class="py-20 bg-white">
 
@@ -375,16 +518,21 @@
 
     <div class="text-center max-w-2xl mx-auto mb-14">
 
-      <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">
+      <span class="text-blue-600 font-bold
+                   uppercase tracking-widest text-sm">
         Our Services
       </span>
 
-      <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mt-3">
+      <h2 class="text-3xl md:text-5xl
+                 font-extrabold
+                 text-slate-900 mt-3">
+
         Complete Water Purifier Solutions
+
       </h2>
 
       <p class="text-slate-500 mt-4">
-        Professional RO service for home and office.
+        Professional RO services for home and office.
       </p>
 
     </div>
@@ -395,10 +543,26 @@
 
       <!-- SERVICE 1 -->
 
-      <div class="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition">
+      <div class="bg-gradient-to-br
+                  from-blue-50 to-white
+                  border border-blue-100
+                  rounded-3xl p-8
+                  shadow-lg
+                  hover:shadow-2xl
+                  hover:-translate-y-2
+                  transition">
 
-        <div class="w-16 h-16 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-3xl shadow-lg">
+        <div class="w-16 h-16
+                    rounded-2xl
+                    bg-blue-600
+                    text-white
+                    flex items-center
+                    justify-center
+                    text-3xl
+                    shadow-lg">
+
           🔧
+
         </div>
 
         <h3 class="text-xl font-extrabold mt-6">
@@ -406,13 +570,17 @@
         </h3>
 
         <p class="text-slate-600 mt-4 leading-7">
-          Complete RO checking, repair, leakage fixing,
-          water-flow problem solving and regular maintenance.
+          Complete RO checking, repair,
+          leakage fixing, water-flow problems
+          and regular maintenance.
         </p>
 
         <a href="#contact"
-           class="inline-block mt-6 text-blue-600 font-bold">
+           class="inline-block mt-6
+                  text-blue-600 font-bold">
+
           Book Service →
+
         </a>
 
       </div>
@@ -420,10 +588,26 @@
 
       <!-- SERVICE 2 -->
 
-      <div class="bg-gradient-to-br from-cyan-50 to-white border border-cyan-100 rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition">
+      <div class="bg-gradient-to-br
+                  from-cyan-50 to-white
+                  border border-cyan-100
+                  rounded-3xl p-8
+                  shadow-lg
+                  hover:shadow-2xl
+                  hover:-translate-y-2
+                  transition">
 
-        <div class="w-16 h-16 rounded-2xl bg-cyan-500 text-white flex items-center justify-center text-3xl shadow-lg">
+        <div class="w-16 h-16
+                    rounded-2xl
+                    bg-cyan-500
+                    text-white
+                    flex items-center
+                    justify-center
+                    text-3xl
+                    shadow-lg">
+
           💧
+
         </div>
 
         <h3 class="text-xl font-extrabold mt-6">
@@ -431,13 +615,17 @@
         </h3>
 
         <p class="text-slate-600 mt-4 leading-7">
-          Filter, membrane, candle and other purifier
-          spare-parts replacement according to your model.
+          Filter, membrane, candle and other
+          purifier spare-parts replacement
+          according to your model.
         </p>
 
         <a href="#contact"
-           class="inline-block mt-6 text-cyan-600 font-bold">
+           class="inline-block mt-6
+                  text-cyan-600 font-bold">
+
           Get Service →
+
         </a>
 
       </div>
@@ -445,10 +633,26 @@
 
       <!-- SERVICE 3 -->
 
-      <div class="bg-gradient-to-br from-green-50 to-white border border-green-100 rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition">
+      <div class="bg-gradient-to-br
+                  from-green-50 to-white
+                  border border-green-100
+                  rounded-3xl p-8
+                  shadow-lg
+                  hover:shadow-2xl
+                  hover:-translate-y-2
+                  transition">
 
-        <div class="w-16 h-16 rounded-2xl bg-green-600 text-white flex items-center justify-center text-3xl shadow-lg">
+        <div class="w-16 h-16
+                    rounded-2xl
+                    bg-green-600
+                    text-white
+                    flex items-center
+                    justify-center
+                    text-3xl
+                    shadow-lg">
+
           🏠
+
         </div>
 
         <h3 class="text-xl font-extrabold mt-6">
@@ -456,13 +660,17 @@
         </h3>
 
         <p class="text-slate-600 mt-4 leading-7">
-          Professional purifier installation, shifting,
-          setup and annual maintenance service.
+          Professional purifier installation,
+          shifting, setup and annual
+          maintenance service.
         </p>
 
         <a href="#contact"
-           class="inline-block mt-6 text-green-600 font-bold">
+           class="inline-block mt-6
+                  text-green-600 font-bold">
+
           Book Now →
+
         </a>
 
       </div>
@@ -475,23 +683,39 @@
 
 
 
-<!-- ======================================================
+<!-- =====================================================
      WHY CHOOSE US
-====================================================== -->
+===================================================== -->
 
 <section id="why"
-         class="py-20 bg-gradient-to-br from-blue-950 via-slate-900 to-cyan-950 text-white">
+         class="py-20
+                bg-gradient-to-br
+                from-blue-950
+                via-slate-900
+                to-cyan-950
+                text-white">
 
   <div class="max-w-7xl mx-auto px-5">
 
-    <div class="text-center max-w-2xl mx-auto mb-14">
+    <div class="text-center
+                max-w-2xl mx-auto
+                mb-14">
 
-      <span class="text-cyan-300 font-bold uppercase tracking-widest text-sm">
+      <span class="text-cyan-300
+                   font-bold
+                   uppercase
+                   tracking-widest
+                   text-sm">
+
         Why Choose Us
+
       </span>
 
-      <h2 class="text-3xl md:text-5xl font-extrabold mt-3">
+      <h2 class="text-3xl md:text-5xl
+                 font-extrabold mt-3">
+
         Why Choose RO Support 365?
+
       </h2>
 
       <p class="text-blue-100 mt-4">
@@ -501,16 +725,16 @@
     </div>
 
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid sm:grid-cols-2
+                lg:grid-cols-4 gap-6">
 
 
-      <!-- BOX 1 -->
+      <div class="bg-white/10
+                  border border-white/10
+                  rounded-3xl p-7
+                  backdrop-blur">
 
-      <div class="bg-white/10 border border-white/10 rounded-3xl p-7 backdrop-blur hover:bg-white/15 transition">
-
-        <div class="text-4xl">
-          📅
-        </div>
+        <div class="text-4xl">📅</div>
 
         <h3 class="text-xl font-bold mt-5">
           365 Days Available
@@ -523,13 +747,12 @@
       </div>
 
 
-      <!-- BOX 2 -->
+      <div class="bg-white/10
+                  border border-white/10
+                  rounded-3xl p-7
+                  backdrop-blur">
 
-      <div class="bg-white/10 border border-white/10 rounded-3xl p-7 backdrop-blur hover:bg-white/15 transition">
-
-        <div class="text-4xl">
-          👨‍🔧
-        </div>
+        <div class="text-4xl">👨‍🔧</div>
 
         <h3 class="text-xl font-bold mt-5">
           Expert Technicians
@@ -542,13 +765,12 @@
       </div>
 
 
-      <!-- BOX 3 -->
+      <div class="bg-white/10
+                  border border-white/10
+                  rounded-3xl p-7
+                  backdrop-blur">
 
-      <div class="bg-white/10 border border-white/10 rounded-3xl p-7 backdrop-blur hover:bg-white/15 transition">
-
-        <div class="text-4xl">
-          🏠
-        </div>
+        <div class="text-4xl">🏠</div>
 
         <h3 class="text-xl font-bold mt-5">
           Doorstep Service
@@ -561,20 +783,19 @@
       </div>
 
 
-      <!-- BOX 4 -->
+      <div class="bg-white/10
+                  border border-white/10
+                  rounded-3xl p-7
+                  backdrop-blur">
 
-      <div class="bg-white/10 border border-white/10 rounded-3xl p-7 backdrop-blur hover:bg-white/15 transition">
-
-        <div class="text-4xl">
-          💰
-        </div>
+        <div class="text-4xl">💰</div>
 
         <h3 class="text-xl font-bold mt-5">
           Affordable Pricing
         </h3>
 
         <p class="text-blue-100 mt-3">
-          Quality service with affordable service options.
+          Quality service with affordable options.
         </p>
 
       </div>
@@ -587,44 +808,78 @@
 
 
 
-<!-- ======================================================
-     CONTACT
-====================================================== -->
+<!-- =====================================================
+     CONTACT US
+===================================================== -->
 
 <section id="contact"
-         class="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
+         class="py-20
+                bg-gradient-to-br
+                from-blue-50
+                via-white
+                to-green-50">
 
   <div class="max-w-6xl mx-auto px-5">
 
-    <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-slate-100">
+    <div class="bg-white
+                rounded-[2rem]
+                shadow-2xl
+                overflow-hidden
+                border border-slate-100">
 
       <div class="grid md:grid-cols-2">
 
 
-        <!-- CONTACT INFO -->
+        <!-- CONTACT -->
 
-        <div class="bg-gradient-to-br from-blue-600 to-cyan-500 text-white p-8 md:p-12">
+        <div class="bg-gradient-to-br
+                    from-blue-600
+                    to-cyan-500
+                    text-white
+                    p-8 md:p-12">
 
-          <span class="text-blue-100 font-bold uppercase tracking-widest text-sm">
+          <span class="text-blue-100
+                       font-bold
+                       uppercase
+                       tracking-widest
+                       text-sm">
+
             Contact Us
+
           </span>
 
-          <h2 class="text-3xl md:text-4xl font-extrabold mt-4">
+          <h2 class="text-3xl md:text-4xl
+                     font-extrabold mt-4">
+
             Need RO Service?
+
           </h2>
 
-          <p class="text-blue-50 mt-5 leading-8">
-            Contact RO Support 365 today for your water purifier
-            repair, filter replacement, installation or maintenance service.
+          <p class="text-blue-50
+                    mt-5
+                    leading-8">
+
+            Contact RO Support 365 for
+            water purifier repair,
+            filter replacement,
+            installation and maintenance.
+
           </p>
 
 
           <div class="mt-8 space-y-5">
 
+
             <div class="flex items-center gap-4">
 
-              <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-xl">
+              <div class="w-12 h-12
+                          bg-white/20
+                          rounded-xl
+                          flex items-center
+                          justify-center">
+
                 📞
+
               </div>
 
               <div>
@@ -644,8 +899,14 @@
 
             <div class="flex items-center gap-4">
 
-              <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-xl">
+              <div class="w-12 h-12
+                          bg-white/20
+                          rounded-xl
+                          flex items-center
+                          justify-center">
+
                 💬
+
               </div>
 
               <div>
@@ -669,10 +930,16 @@
 
         <!-- BOOKING -->
 
-        <div class="p-8 md:p-12 flex flex-col justify-center">
+        <div class="p-8 md:p-12
+                    flex flex-col
+                    justify-center">
 
-          <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">
+          <h3 class="text-2xl md:text-3xl
+                     font-extrabold
+                     text-slate-900">
+
             Book Your Service
+
           </h3>
 
           <p class="text-slate-500 mt-3">
@@ -680,29 +947,52 @@
           </p>
 
 
-          <!-- CALL -->
-
           <a href="tel:07795695494"
-             class="mt-8 flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-2xl font-bold text-lg shadow-xl transition">
+             class="mt-8
+                    flex items-center
+                    justify-center
+                    bg-blue-600
+                    hover:bg-blue-700
+                    text-white
+                    py-5
+                    rounded-2xl
+                    font-bold
+                    text-lg
+                    shadow-xl
+                    transition">
 
             📞 Call Now — 07795695494
 
           </a>
 
 
-          <!-- WHATSAPP -->
-
           <a href="https://wa.me/917795695494?text=Hello%20RO%20Support%20365,%20I%20want%20to%20book%20RO%20service."
              target="_blank"
-             class="mt-4 flex items-center justify-center gap-3 bg-[#25D366] hover:bg-green-600 text-white py-5 rounded-2xl font-bold text-lg shadow-xl transition">
+             class="mt-4
+                    flex items-center
+                    justify-center
+                    bg-[#25D366]
+                    hover:bg-green-600
+                    text-white
+                    py-5
+                    rounded-2xl
+                    font-bold
+                    text-lg
+                    shadow-xl
+                    transition">
 
             💬 WhatsApp Booking
 
           </a>
 
 
-          <p class="text-center text-xs text-slate-400 mt-5">
+          <p class="text-center
+                    text-xs
+                    text-slate-400
+                    mt-5">
+
             RO Repair • Filter Replacement • Installation • AMC
+
           </p>
 
         </div>
@@ -717,15 +1007,19 @@
 
 
 
-<!-- ======================================================
+<!-- =====================================================
      FOOTER
-====================================================== -->
+===================================================== -->
 
 <footer class="bg-slate-950 text-white py-8">
 
   <div class="max-w-7xl mx-auto px-5">
 
-    <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+    <div class="flex flex-col
+                md:flex-row
+                items-center
+                justify-between
+                gap-5">
 
       <div class="text-center md:text-left">
 
@@ -746,7 +1040,11 @@
 
 
       <a href="tel:07795695494"
-         class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-bold transition">
+         class="bg-blue-600
+                hover:bg-blue-700
+                px-6 py-3
+                rounded-full
+                font-bold">
 
         📞 Call Now
 
@@ -760,14 +1058,25 @@
 
 
 
-<!-- ======================================================
+<!-- =====================================================
      FLOATING WHATSAPP
-====================================================== -->
+===================================================== -->
 
 <a href="https://wa.me/917795695494?text=Hello%20RO%20Support%20365,%20I%20need%20RO%20service."
    target="_blank"
    aria-label="WhatsApp Chat"
-   class="fixed right-5 bottom-5 z-50 w-16 h-16 rounded-full bg-[#25D366] hover:bg-green-600 text-white flex items-center justify-center shadow-2xl text-3xl hover:scale-110 transition">
+   class="fixed right-5 bottom-5 z-50
+          w-16 h-16
+          rounded-full
+          bg-[#25D366]
+          hover:bg-green-600
+          text-white
+          flex items-center
+          justify-center
+          shadow-2xl
+          text-3xl
+          hover:scale-110
+          transition">
 
   💬
 
@@ -776,3 +1085,11 @@
 
 </body>
 </html>
+
+
+  
+             
+
+
+           
+      
