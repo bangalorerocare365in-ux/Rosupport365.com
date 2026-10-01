@@ -1,1091 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>RO Support 365 | Water Purifier Repair & Service</title>
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "Poppins", sans-serif;
-    }
-
-    .hero-bg {
-      background:
-        radial-gradient(circle at 85% 15%, rgba(6,182,212,.30), transparent 28%),
-        radial-gradient(circle at 10% 85%, rgba(37,99,235,.22), transparent 30%),
-        linear-gradient(135deg, #eff6ff, #ecfeff, #f0fdf4);
-    }
-
-    .gradient-text {
-      background: linear-gradient(90deg, #2563eb, #06b6d4, #16a34a);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .ro-image {
-      animation: floating 4s ease-in-out infinite;
-      filter: drop-shadow(0 25px 25px rgba(15,23,42,.25));
-    }
-
-    @keyframes floating {
-      0%, 100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RO Support 365 - Best Water Purifier Repair & Service</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating-img {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
 </head>
+<body class="bg-slate-900 text-gray-100 font-sans selection:bg-cyan-500 selection:text-white">
 
-<body class="bg-slate-50 text-slate-800">
-
-
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
-
-<header class="fixed top-0 left-0 right-0 z-50">
-
-  <nav class="bg-white/90 backdrop-blur-xl border-b border-slate-200 shadow-sm">
-
-    <div class="max-w-7xl mx-auto px-5">
-
-      <div class="h-20 flex items-center justify-between">
-
-        <!-- LOGO -->
-
-        <a href="#home" class="flex items-center gap-3">
-
-          <div class="w-12 h-12 rounded-2xl
-                      bg-gradient-to-br from-blue-600 to-cyan-400
-                      flex items-center justify-center shadow-lg">
-
-            <span class="text-white font-extrabold text-lg">
-              RO
-            </span>
-
-          </div>
-
-          <div>
-
-            <div class="text-xl font-extrabold gradient-text">
-              RO Support 365
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/30">
+                    <i class="fa-solid fa-droplet text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">RO Support 365</span>
             </div>
-
-            <div class="text-[10px] text-slate-500 font-bold tracking-wider">
-              WATER PURIFIER SERVICE
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-300">
+                <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+                <a href="#services" class="hover:text-cyan-400 transition">Services</a>
+                <a href="#why-us" class="hover:text-cyan-400 transition">Why Choose Us</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact Us</a>
+            </nav>
+            <div>
+                <a href="tel:+9107795695494" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-cyan-500/20 transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
             </div>
-
-          </div>
-
-        </a>
-
-
-        <!-- DESKTOP MENU -->
-
-        <div class="hidden md:flex items-center gap-7">
-
-          <a href="#home"
-             class="font-semibold hover:text-blue-600 transition">
-            Home
-          </a>
-
-          <a href="#services"
-             class="font-semibold hover:text-blue-600 transition">
-            Services
-          </a>
-
-          <a href="#why"
-             class="font-semibold hover:text-blue-600 transition">
-            Why Choose Us
-          </a>
-
-          <a href="#contact"
-             class="font-semibold hover:text-blue-600 transition">
-            Contact Us
-          </a>
-
-          <a href="tel:07795695494"
-             class="bg-blue-600 hover:bg-blue-700
-                    text-white px-6 py-3 rounded-full
-                    font-bold shadow-lg transition">
-
-            📞 Call Now
-
-          </a>
-
         </div>
-
-
-        <!-- MOBILE CALL -->
-
-        <a href="tel:07795695494"
-           class="md:hidden bg-blue-600 text-white
-                  px-4 py-2 rounded-full font-bold text-sm">
-
-          📞 Call
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </nav>
-
-</header>
-
-
-
-<!-- =====================================================
-     HERO SECTION
-===================================================== -->
-
-<section id="home"
-         class="hero-bg min-h-screen pt-32 pb-16
-                md:pt-36 flex items-center">
-
-  <div class="max-w-7xl mx-auto px-5 w-full">
-
-    <div class="grid lg:grid-cols-2
-                gap-12 lg:gap-16
-                items-center">
-
-
-      <!-- =================================================
-           LEFT SIDE
-      ================================================== -->
-
-      <div class="text-center lg:text-left">
-
-
-        <!-- AVAILABLE TAG -->
-
-        <div class="inline-flex items-center gap-2
-                    bg-white border border-green-200
-                    shadow-md px-5 py-2.5
-                    rounded-full mb-6">
-
-          <span class="relative flex h-3 w-3">
-
-            <span class="animate-ping absolute
-                         inline-flex h-full w-full
-                         rounded-full bg-green-400
-                         opacity-75">
-            </span>
-
-            <span class="relative inline-flex
-                         rounded-full h-3 w-3
-                         bg-green-500">
-            </span>
-
-          </span>
-
-          <span class="font-bold text-sm text-green-700">
-            Available 365 Days
-          </span>
-
-        </div>
-
-
-        <!-- COMPANY NAME -->
-
-        <p class="text-blue-600 font-extrabold
-                  uppercase tracking-[4px]
-                  text-sm mb-4">
-
-          RO Support 365
-
-        </p>
-
-
-        <!-- MAIN HEADING -->
-
-        <h1 class="text-4xl sm:text-5xl
-                   lg:text-6xl xl:text-7xl
-                   font-extrabold
-                   leading-tight
-                   text-slate-900">
-
-          Best Water Purifier
-
-          <span class="block gradient-text">
-            Repair & Service
-          </span>
-
-        </h1>
-
-
-        <!-- DESCRIPTION -->
-
-        <p class="mt-6 text-lg
-                  text-slate-600
-                  leading-8
-                  max-w-xl
-                  mx-auto lg:mx-0">
-
-          Professional RO and water purifier
-          repair service at your doorstep.
-
-          Repair, maintenance, filter replacement,
-          installation and AMC service.
-
-        </p>
-
-
-        <!-- THREE BUTTONS -->
-
-        <div class="flex flex-col sm:flex-row
-                    flex-wrap gap-4 mt-8
-                    justify-center lg:justify-start">
-
-
-          <!-- BOOK SERVICE -->
-
-          <a href="#contact"
-             class="inline-flex items-center
-                    justify-center gap-2
-                    bg-blue-600 hover:bg-blue-700
-                    text-white px-7 py-4
-                    rounded-xl font-bold
-                    shadow-xl
-                    hover:-translate-y-1
-                    transition">
-
-            🔧 Book Service
-
-          </a>
-
-
-          <!-- WHATSAPP -->
-
-          <a href="https://wa.me/917795695494?text=Hello%20RO%20Support%20365%2C%20I%20need%20water%20purifier%20service."
-             target="_blank"
-             class="inline-flex items-center
-                    justify-center gap-2
-                    bg-[#25D366] hover:bg-green-600
-                    text-white px-7 py-4
-                    rounded-xl font-bold
-                    shadow-xl
-                    hover:-translate-y-1
-                    transition">
-
-
-            <!-- WhatsApp SVG -->
-
-            <svg width="23"
-                 height="23"
-                 viewBox="0 0 24 24"
-                 fill="currentColor">
-
-              <path d="M20.52 3.48A11.82 11.82 0 0012.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.35-1.66a11.86 11.86 0 005.6 1.42h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.24-6.15-3.38-8.42zM12.04 21.75h-.01a9.87 9.87 0 01-5.03-1.37l-.36-.21-3.77.99 1.01-3.68-.23-.38a9.83 9.83 0 01-1.51-5.24c0-5.45 4.44-9.88 9.9-9.88a9.84 9.84 0 017 2.9 9.84 9.84 0 012.9 7c-.01 5.45-4.45 9.87-9.9 9.87zm5.42-7.39c-.3-.15-1.78-.88-2.05-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.94 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.67-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.17-1.43-.08-.12-.27-.2-.57-.35z"/>
-
-            </svg>
-
-            WhatsApp Chat
-
-          </a>
-
-
-          <!-- CALL NOW -->
-
-          <a href="tel:07795695494"
-             class="inline-flex items-center
-                    justify-center gap-2
-                    bg-slate-950 hover:bg-slate-800
-                    text-white px-7 py-4
-                    rounded-xl font-bold
-                    shadow-xl
-                    hover:-translate-y-1
-                    transition">
-
-            📞 Call Now
-
-            <span class="text-cyan-300">
-              07795695494
-            </span>
-
-          </a>
-
-        </div>
-
-
-        <!-- SMALL FEATURES -->
-
-        <div class="flex flex-wrap
-                    justify-center lg:justify-start
-                    gap-5 mt-8
-                    text-sm font-semibold
-                    text-slate-600">
-
-          <span>✓ Doorstep Service</span>
-          <span>✓ Expert Technicians</span>
-          <span>✓ Quality Parts</span>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           RIGHT SIDE
-           BIG EMPTY CARD + RO PHOTO
-      ================================================== -->
-
-      <div class="relative">
-
-
-        <!-- Decorative Glow -->
-
-        <div class="absolute -top-10 -right-10
-                    w-44 h-44
-                    bg-cyan-300/40
-                    rounded-full
-                    blur-3xl">
-        </div>
-
-        <div class="absolute -bottom-10 -left-10
-                    w-52 h-52
-                    bg-blue-400/30
-                    rounded-full
-                    blur-3xl">
-        </div>
-
-
-        <!-- =================================================
-             BIG CARD / BOX
-        ================================================== -->
-
-        <div class="relative
-                    bg-white
-                    rounded-[2rem]
-                    border border-slate-100
-                    shadow-2xl
-                    p-5 sm:p-8">
-
-
-          <!-- 365 DAYS BADGE -->
-
-          <div class="absolute top-5 left-5 z-30
-                      bg-green-500
-                      text-white
-                      px-4 py-2
-                      rounded-full
-                      text-xs sm:text-sm
-                      font-bold
-                      shadow-lg">
-
-            ✓ 365 DAYS SERVICE
-
-          </div>
-
-
-          <!-- =================================================
-               EMPTY CARD AREA
-               RO IMAGE EXACTLY IN CENTER
-          ================================================== -->
-
-          <div class="relative
-                      w-full
-                      min-h-[430px]
-                      sm:min-h-[540px]
-                      rounded-[1.5rem]
-                      overflow-hidden
-                      flex items-center
-                      justify-center
-                      bg-gradient-to-br
-                      from-blue-50
-                      via-white
-                      to-cyan-100">
-
-
-            <!-- Decorative Circle -->
-
-            <div class="absolute
-                        w-72 h-72
-                        sm:w-[420px] sm:h-[420px]
-                        rounded-full
-                        bg-cyan-200/40
-                        blur-3xl">
-            </div>
-
-
-            <!-- =================================================
-                 REAL WATER PURIFIER PHOTO
-
-                 Direct Internet Image
-                 No Local File
-            ================================================== -->
-
-            <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/RO%20SYSTEM.jpg?width=900"
-              alt="RO Water Purifier"
-              class="ro-image
-                     relative z-10
-                     block
-                     w-auto
-                     max-w-[88%]
-                     h-[350px]
-                     sm:h-[460px]
-                     object-contain
-                     object-center"
-              loading="eager"
-              decoding="async"
-            >
-
-
-            <!-- Small Label -->
-
-            <div class="absolute
-                        bottom-5
-                        left-1/2
-                        -translate-x-1/2
-                        z-20
-                        bg-white/95
-                        backdrop-blur
-                        px-5 py-2
-                        rounded-full
-                        shadow-lg
-                        text-sm
-                        font-bold
-                        text-blue-700
-                        whitespace-nowrap">
-
-              Pure Water • Better Life
-
-            </div>
-
-          </div>
-
-
-          <!-- PHOTO TITLE -->
-
-          <div class="text-center mt-6">
-
-            <h2 class="text-2xl sm:text-3xl
-                       font-extrabold
-                       text-slate-900">
-
-              RO Water Purifier
-
-            </h2>
-
-            <p class="text-slate-500 mt-2">
-
-              Repair • Service • Filter • Installation • AMC
-
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     OUR SERVICES
-===================================================== -->
-
-<section id="services" class="py-20 bg-white">
-
-  <div class="max-w-7xl mx-auto px-5">
-
-    <div class="text-center max-w-2xl mx-auto mb-14">
-
-      <span class="text-blue-600 font-bold
-                   uppercase tracking-widest text-sm">
-        Our Services
-      </span>
-
-      <h2 class="text-3xl md:text-5xl
-                 font-extrabold
-                 text-slate-900 mt-3">
-
-        Complete Water Purifier Solutions
-
-      </h2>
-
-      <p class="text-slate-500 mt-4">
-        Professional RO services for home and office.
-      </p>
-
-    </div>
-
-
-    <div class="grid md:grid-cols-3 gap-7">
-
-
-      <!-- SERVICE 1 -->
-
-      <div class="bg-gradient-to-br
-                  from-blue-50 to-white
-                  border border-blue-100
-                  rounded-3xl p-8
-                  shadow-lg
-                  hover:shadow-2xl
-                  hover:-translate-y-2
-                  transition">
-
-        <div class="w-16 h-16
-                    rounded-2xl
-                    bg-blue-600
-                    text-white
-                    flex items-center
-                    justify-center
-                    text-3xl
-                    shadow-lg">
-
-          🔧
-
-        </div>
-
-        <h3 class="text-xl font-extrabold mt-6">
-          RO Repair & Maintenance
-        </h3>
-
-        <p class="text-slate-600 mt-4 leading-7">
-          Complete RO checking, repair,
-          leakage fixing, water-flow problems
-          and regular maintenance.
-        </p>
-
-        <a href="#contact"
-           class="inline-block mt-6
-                  text-blue-600 font-bold">
-
-          Book Service →
-
-        </a>
-
-      </div>
-
-
-      <!-- SERVICE 2 -->
-
-      <div class="bg-gradient-to-br
-                  from-cyan-50 to-white
-                  border border-cyan-100
-                  rounded-3xl p-8
-                  shadow-lg
-                  hover:shadow-2xl
-                  hover:-translate-y-2
-                  transition">
-
-        <div class="w-16 h-16
-                    rounded-2xl
-                    bg-cyan-500
-                    text-white
-                    flex items-center
-                    justify-center
-                    text-3xl
-                    shadow-lg">
-
-          💧
-
-        </div>
-
-        <h3 class="text-xl font-extrabold mt-6">
-          Filter & Parts Replacement
-        </h3>
-
-        <p class="text-slate-600 mt-4 leading-7">
-          Filter, membrane, candle and other
-          purifier spare-parts replacement
-          according to your model.
-        </p>
-
-        <a href="#contact"
-           class="inline-block mt-6
-                  text-cyan-600 font-bold">
-
-          Get Service →
-
-        </a>
-
-      </div>
-
-
-      <!-- SERVICE 3 -->
-
-      <div class="bg-gradient-to-br
-                  from-green-50 to-white
-                  border border-green-100
-                  rounded-3xl p-8
-                  shadow-lg
-                  hover:shadow-2xl
-                  hover:-translate-y-2
-                  transition">
-
-        <div class="w-16 h-16
-                    rounded-2xl
-                    bg-green-600
-                    text-white
-                    flex items-center
-                    justify-center
-                    text-3xl
-                    shadow-lg">
-
-          🏠
-
-        </div>
-
-        <h3 class="text-xl font-extrabold mt-6">
-          Installation & AMC
-        </h3>
-
-        <p class="text-slate-600 mt-4 leading-7">
-          Professional purifier installation,
-          shifting, setup and annual
-          maintenance service.
-        </p>
-
-        <a href="#contact"
-           class="inline-block mt-6
-                  text-green-600 font-bold">
-
-          Book Now →
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     WHY CHOOSE US
-===================================================== -->
-
-<section id="why"
-         class="py-20
-                bg-gradient-to-br
-                from-blue-950
-                via-slate-900
-                to-cyan-950
-                text-white">
-
-  <div class="max-w-7xl mx-auto px-5">
-
-    <div class="text-center
-                max-w-2xl mx-auto
-                mb-14">
-
-      <span class="text-cyan-300
-                   font-bold
-                   uppercase
-                   tracking-widest
-                   text-sm">
-
-        Why Choose Us
-
-      </span>
-
-      <h2 class="text-3xl md:text-5xl
-                 font-extrabold mt-3">
-
-        Why Choose RO Support 365?
-
-      </h2>
-
-      <p class="text-blue-100 mt-4">
-        Professional service with doorstep convenience.
-      </p>
-
-    </div>
-
-
-    <div class="grid sm:grid-cols-2
-                lg:grid-cols-4 gap-6">
-
-
-      <div class="bg-white/10
-                  border border-white/10
-                  rounded-3xl p-7
-                  backdrop-blur">
-
-        <div class="text-4xl">📅</div>
-
-        <h3 class="text-xl font-bold mt-5">
-          365 Days Available
-        </h3>
-
-        <p class="text-blue-100 mt-3">
-          Service support available throughout the year.
-        </p>
-
-      </div>
-
-
-      <div class="bg-white/10
-                  border border-white/10
-                  rounded-3xl p-7
-                  backdrop-blur">
-
-        <div class="text-4xl">👨‍🔧</div>
-
-        <h3 class="text-xl font-bold mt-5">
-          Expert Technicians
-        </h3>
-
-        <p class="text-blue-100 mt-3">
-          Skilled technicians for different purifier models.
-        </p>
-
-      </div>
-
-
-      <div class="bg-white/10
-                  border border-white/10
-                  rounded-3xl p-7
-                  backdrop-blur">
-
-        <div class="text-4xl">🏠</div>
-
-        <h3 class="text-xl font-bold mt-5">
-          Doorstep Service
-        </h3>
-
-        <p class="text-blue-100 mt-3">
-          Convenient repair and maintenance at your doorstep.
-        </p>
-
-      </div>
-
-
-      <div class="bg-white/10
-                  border border-white/10
-                  rounded-3xl p-7
-                  backdrop-blur">
-
-        <div class="text-4xl">💰</div>
-
-        <h3 class="text-xl font-bold mt-5">
-          Affordable Pricing
-        </h3>
-
-        <p class="text-blue-100 mt-3">
-          Quality service with affordable options.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT US
-===================================================== -->
-
-<section id="contact"
-         class="py-20
-                bg-gradient-to-br
-                from-blue-50
-                via-white
-                to-green-50">
-
-  <div class="max-w-6xl mx-auto px-5">
-
-    <div class="bg-white
-                rounded-[2rem]
-                shadow-2xl
-                overflow-hidden
-                border border-slate-100">
-
-      <div class="grid md:grid-cols-2">
-
-
-        <!-- CONTACT -->
-
-        <div class="bg-gradient-to-br
-                    from-blue-600
-                    to-cyan-500
-                    text-white
-                    p-8 md:p-12">
-
-          <span class="text-blue-100
-                       font-bold
-                       uppercase
-                       tracking-widest
-                       text-sm">
-
-            Contact Us
-
-          </span>
-
-          <h2 class="text-3xl md:text-4xl
-                     font-extrabold mt-4">
-
-            Need RO Service?
-
-          </h2>
-
-          <p class="text-blue-50
-                    mt-5
-                    leading-8">
-
-            Contact RO Support 365 for
-            water purifier repair,
-            filter replacement,
-            installation and maintenance.
-
-          </p>
-
-
-          <div class="mt-8 space-y-5">
-
-
-            <div class="flex items-center gap-4">
-
-              <div class="w-12 h-12
-                          bg-white/20
-                          rounded-xl
-                          flex items-center
-                          justify-center">
-
-                📞
-
-              </div>
-
-              <div>
-
-                <p class="text-xs text-blue-100">
-                  Call Us
+    </header>
+
+    <!-- Hero / Banner Section with Image Inside Box -->
+    <section id="home" class="relative bg-gradient-to-br from-indigo-950 via-slate-900 to-blue-950 py-20 lg:py-28 px-6 lg:px-20 overflow-hidden">
+        <!-- Glowing Background Effects -->
+        <div class="absolute top-10 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
+            
+            <!-- Left Content -->
+            <div class="flex-1 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 text-cyan-400 px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-inner">
+                    <span class="w-3 h-3 bg-cyan-400 rounded-full animate-ping"></span>
+                    Available 365 Days
+                </div>
+
+                <h2 class="text-xl lg:text-2xl font-bold text-cyan-400 uppercase tracking-widest mb-2">RO Support 365</h2>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Best Water Purifier <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Repair & Service</span>
+                </h1>
+
+                <p class="text-lg lg:text-xl text-slate-300 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Professional RO and water purifier repair, filter replacement, installation and maintenance service at your doorstep. Fast, reliable and convenient service.
                 </p>
 
-                <p class="font-bold text-lg">
-                  07795695494
-                </p>
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold text-base px-7 py-3.5 rounded-xl shadow-lg shadow-blue-500/30 transition flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i> Book Service
+                    </a>
+                    <a href="https://wa.me/9107795695494" target="_blank" class="bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white font-semibold text-base px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-500/30 transition flex items-center gap-2.5">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Chat
+                    </a>
+                    <a href="tel:+9107795695494" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-base px-7 py-3.5 rounded-xl shadow-lg transition flex items-center gap-2.5">
+                        <i class="fa-solid fa-phone text-cyan-400"></i> 07795695494
+                    </a>
+                </div>
 
-              </div>
-
+                <div class="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-400 font-medium">
+                    <span><i class="fa-solid fa-check text-cyan-400 mr-1"></i> Doorstep Service</span>
+                    <span><i class="fa-solid fa-check text-cyan-400 mr-1"></i> Expert Technicians</span>
+                    <span><i class="fa-solid fa-check text-cyan-400 mr-1"></i> Quality Parts</span>
+                </div>
             </div>
 
-
-            <div class="flex items-center gap-4">
-
-              <div class="w-12 h-12
-                          bg-white/20
-                          rounded-xl
-                          flex items-center
-                          justify-center">
-
-                💬
-
-              </div>
-
-              <div>
-
-                <p class="text-xs text-blue-100">
-                  WhatsApp
-                </p>
-
-                <p class="font-bold text-lg">
-                  Chat With Us
-                </p>
-
-              </div>
-
+            <!-- Right Water Purifier Image Inside Empty Box -->
+            <div class="flex-1 w-full max-w-xl lg:max-w-none flex justify-center">
+                <div class="relative bg-gradient-to-b from-slate-800/90 to-slate-900/90 backdrop-blur-xl p-8 lg:p-12 rounded-3xl shadow-2xl border border-slate-700/80 w-full flex flex-col items-center justify-center min-h-[420px]">
+                    <!-- यहाँ इंटरनेट से डायरेक्ट वाटर प्यूरीफायर की फोटो लगाई गई है ताकि बॉक्स खाली न रहे -->
+                    <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80" alt="RO Water Purifier" class="max-h-[320px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(6,182,212,0.3)] floating-img rounded-xl mb-4">
+                    <div class="text-center mt-2">
+                        <h3 class="text-lg font-bold text-white tracking-wide">RO Water Purifier</h3>
+                        <p class="text-xs text-slate-400 mt-1">Repair • Service • Filter • Installation • AMC</p>
+                    </div>
+                </div>
             </div>
 
-          </div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Our Services</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">We provide comprehensive maintenance and repair solutions for all types of water purifiers.</p>
         </div>
 
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 p-8 rounded-2xl shadow-xl transition">
+                <div class="w-14 h-14 bg-gradient-to-tr from-blue-600 to-cyan-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-lg">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">RO Repair & Maintenance</h3>
+                <p class="text-slate-400">Quick doorstep diagnosis and fixing of leakage, motor issues, power supply failure, and purification problems.</p>
+            </div>
 
-        <!-- BOOKING -->
+            <div class="bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 p-8 rounded-2xl shadow-xl transition">
+                <div class="w-14 h-14 bg-gradient-to-tr from-cyan-600 to-teal-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-lg">
+                    <i class="fa-solid fa-filter"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Filter & Parts Replacement</h3>
+                <p class="text-slate-400">100% genuine spare parts including sediment filters, carbon filters, UV lamps, and RO membranes.</p>
+            </div>
 
-        <div class="p-8 md:p-12
-                    flex flex-col
-                    justify-center">
-
-          <h3 class="text-2xl md:text-3xl
-                     font-extrabold
-                     text-slate-900">
-
-            Book Your Service
-
-          </h3>
-
-          <p class="text-slate-500 mt-3">
-            Contact us directly to book your RO service.
-          </p>
-
-
-          <a href="tel:07795695494"
-             class="mt-8
-                    flex items-center
-                    justify-center
-                    bg-blue-600
-                    hover:bg-blue-700
-                    text-white
-                    py-5
-                    rounded-2xl
-                    font-bold
-                    text-lg
-                    shadow-xl
-                    transition">
-
-            📞 Call Now — 07795695494
-
-          </a>
-
-
-          <a href="https://wa.me/917795695494?text=Hello%20RO%20Support%20365,%20I%20want%20to%20book%20RO%20service."
-             target="_blank"
-             class="mt-4
-                    flex items-center
-                    justify-center
-                    bg-[#25D366]
-                    hover:bg-green-600
-                    text-white
-                    py-5
-                    rounded-2xl
-                    font-bold
-                    text-lg
-                    shadow-xl
-                    transition">
-
-            💬 WhatsApp Booking
-
-          </a>
-
-
-          <p class="text-center
-                    text-xs
-                    text-slate-400
-                    mt-5">
-
-            RO Repair • Filter Replacement • Installation • AMC
-
-          </p>
-
+            <div class="bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 p-8 rounded-2xl shadow-xl transition">
+                <div class="w-14 h-14 bg-gradient-to-tr from-indigo-600 to-blue-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-lg">
+                    <i class="fa-solid fa-house-chimney-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Installation & AMC</h3>
+                <p class="text-slate-400">Need a new RO installed or hassle-free yearly maintenance contracts (AMC)? We've got you covered.</p>
+            </div>
         </div>
+    </section>
 
-      </div>
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-slate-950/60 border-y border-slate-800 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Why Choose RO Support 365?</h2>
+            <p class="text-slate-400 max-w-xl mx-auto mb-16">Reliable, fast, and trusted water purifier experts at your service.</p>
 
-    </div>
+            <div class="grid md:grid-cols-4 gap-8 text-left">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="text-cyan-400 text-3xl mb-4"><i class="fa-solid fa-clock"></i></div>
+                    <h4 class="font-bold text-lg text-white mb-2">365 Days Available</h4>
+                    <p class="text-slate-400 text-sm">Service available throughout the year without holidays.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="text-cyan-400 text-3xl mb-4"><i class="fa-solid fa-user-shield"></i></div>
+                    <h4 class="font-bold text-lg text-white mb-2">Expert Technicians</h4>
+                    <p class="text-slate-400 text-sm">Verified, trained, and professional repair technicians.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="text-cyan-400 text-3xl mb-4"><i class="fa-solid fa-bolt"></i></div>
+                    <h4 class="font-bold text-lg text-white mb-2">Doorstep Service</h4>
+                    <p class="text-slate-400 text-sm">Fast and instant repair right at your home.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="text-cyan-400 text-3xl mb-4"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <h4 class="font-bold text-lg text-white mb-2">Affordable Pricing</h4>
+                    <p class="text-slate-400 text-sm">Transparent and pocket-friendly service charges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Book Your Service Today</h2>
+        <p class="text-slate-400 mb-8">Contact us now for quick repair or maintenance service.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="tel:+9107795695494" class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-cyan-500/30 flex items-center gap-3">
+                <i class="fa-solid fa-phone"></i> Call: 07795695494
+            </a>
+            <a href="https://wa.me/9107795695494" target="_blank" class="bg-gradient-to-r from-emerald-600 to-teal-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-emerald-500/30 flex items-center gap-3">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="bg-slate-950 text-white py-8">
-
-  <div class="max-w-7xl mx-auto px-5">
-
-    <div class="flex flex-col
-                md:flex-row
-                items-center
-                justify-between
-                gap-5">
-
-      <div class="text-center md:text-left">
-
-        <h3 class="text-xl font-extrabold">
-          RO Support 365
-        </h3>
-
-        <p class="text-slate-400 text-sm mt-1">
-          Best Water Purifier Repair & Service
-        </p>
-
-      </div>
-
-
-      <p class="text-slate-500 text-sm">
-        © 2026 RO Support 365. All Rights Reserved.
-      </p>
-
-
-      <a href="tel:07795695494"
-         class="bg-blue-600
-                hover:bg-blue-700
-                px-6 py-3
-                rounded-full
-                font-bold">
-
-        📞 Call Now
-
-      </a>
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-
-<!-- =====================================================
-     FLOATING WHATSAPP
-===================================================== -->
-
-<a href="https://wa.me/917795695494?text=Hello%20RO%20Support%20365,%20I%20need%20RO%20service."
-   target="_blank"
-   aria-label="WhatsApp Chat"
-   class="fixed right-5 bottom-5 z-50
-          w-16 h-16
-          rounded-full
-          bg-[#25D366]
-          hover:bg-green-600
-          text-white
-          flex items-center
-          justify-center
-          shadow-2xl
-          text-3xl
-          hover:scale-110
-          transition">
-
-  💬
-
-</a>
-
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-8 text-center border-t border-slate-900">
+        <p>&copy; 2026 RO Support 365. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
-
 
   
              
