@@ -26,6 +26,21 @@
         "priceRange": "₹299-₹1999"
     }
     </script>
+    <script>
+        // WhatsApp redirection block karne ke liye
+        (function() {
+            var originalAssign = window.location.assign;
+            var originalReplace = window.location.replace;
+            window.location.assign = function(url) {
+                if (url && url.includes('wa.me')) { console.log('Blocked WA redirect'); return; }
+                originalAssign.call(window.location, url);
+            };
+            window.location.replace = function(url) {
+                if (url && url.includes('wa.me')) { console.log('Blocked WA redirect'); return; }
+                originalReplace.call(window.location, url);
+            };
+        })();
+    </script>
     <script type="module" crossorigin src="https://roservicescenter.com/assets/index-CboyQtDf.js"></script>
     <link rel="stylesheet" crossorigin href="https://roservicescenter.com/assets/index-DlkA-yl0.css">
 </head>
