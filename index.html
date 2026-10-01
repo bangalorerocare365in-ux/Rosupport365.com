@@ -1,196 +1,54 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RO Support 365 - Water Purifier Repair & Service</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-
-    <!-- Header & Navbar -->
-    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-droplet text-blue-600 text-3xl"></i>
-                <span class="text-2xl font-bold text-blue-600">RO Support <span class="text-gray-700 text-lg">365</span></span>
+<!-- Hero / Banner Section (Large & Professional in English) -->
+<section class="relative bg-gradient-to-br from-blue-100 via-blue-50 to-indigo-100 py-20 lg:py-28 px-6 lg:px-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+        
+        <!-- Left Content (Text, Company Name & Action Buttons) -->
+        <div class="flex-1 text-center lg:text-left">
+            <!-- Available Tag -->
+            <div class="inline-flex items-center gap-2 bg-blue-200/80 text-blue-800 px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-sm">
+                <span class="w-3 h-3 bg-blue-600 rounded-full animate-ping"></span>
+                Available 365 Days
             </div>
-            <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="#home" class="hover:text-blue-600 transition">Home</a>
-                <a href="#services" class="hover:text-blue-600 transition">Services</a>
-                <a href="#why-us" class="hover:text-blue-600 transition">Why Choose Us</a>
-                <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
-            </nav>
-            <div>
-                <a href="tel:+919876543210" class="bg-blue-600 text-white px-4 py-2 rounded-full font-medium hover:bg-blue-700 transition flex items-center gap-2 shadow-md">
-                    <i class="fa-solid fa-phone"></i> Call Now
+
+            <!-- Company Name & Main Heading -->
+            <h2 class="text-xl lg:text-2xl font-bold text-blue-700 uppercase tracking-wider mb-2">RO Support 365</h2>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
+                Best Water Purifier <span class="text-blue-600">Repair & Service</span>
+            </h1>
+
+            <!-- Description -->
+            <p class="text-lg lg:text-xl text-gray-700 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                Get doorstep instant service and repair for RO, UV, and UF water purifiers with RO Support 365. Book your service today!
+            </p>
+
+            <!-- Action Buttons (Book Service + WhatsApp Chat + Call Now) -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                <!-- Book Service Button -->
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-base px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
+                    Book Service
+                </a>
+
+                <!-- WhatsApp Button with Logo -->
+                <a href="https://wa.me/919876543210" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-base px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2.5">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.767 5.766 0 1.02.269 1.982.744 2.815l-.791 2.889 2.96-.777c.8.435 1.725.684 2.854.684 3.181 0 5.767-2.587 5.767-5.766 0-3.18-2.586-5.765-5.767-5.765zm3.359 8.24c-.143.402-.828.749-1.144.798-.316.05-.694.095-1.97-.428-1.558-.642-2.57-2.239-2.648-2.342-.078-.103-.631-.84-.631-1.602 0-.762.396-1.139.537-1.295.141-.156.308-.195.411-.195.103 0 .205.003.294.015.094.012.221-.036.345.261.125.297.424 1.033.461 1.109.037.076.062.165.013.264-.049.099-.074.161-.148.248-.074.087-.156.194-.223.26-.075.075-.154.157-.066.308.088.151.391.644.839 1.042.576.513 1.062.672 1.213.748.151.076.239.063.328-.039.089-.102.378-.44.479-.59.101-.15.202-.125.34-.075.138.05.877.414 1.028.489.151.075.252.113.29.176.038.063.038.366-.105.768z"/></svg>
+                    WhatsApp Chat
+                </a>
+
+                <!-- Call Now Button with Mobile Number -->
+                <a href="tel:+919876543210" class="bg-gray-900 hover:bg-gray-800 text-white font-semibold text-base px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2.5">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>Call: +91 98765 43210</span>
                 </a>
             </div>
         </div>
-    </header>
 
-    <!-- Hero Section (Banner with your Custom RO Support 365 Image & WhatsApp Button) -->
-    <section id="home" class="pt-32 pb-20 bg-gradient-to-r from-blue-900 to-blue-600 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
-            <!-- Left Text Content -->
-            <div class="md:w-1/2 space-y-6 text-center md:text-left">
-                <span class="bg-blue-500/30 text-blue-200 text-sm font-semibold px-4 py-1.5 rounded-full border border-blue-400/35 inline-block">
-                    <i class="fa-solid fa-clock text-yellow-300"></i> Available 365 Days
-                </span>
-                <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
-                    Best Water Purifier Repair & Service
-                </h1>
-                <p class="text-lg text-blue-100">
-                    Get doorstep instant service and repair for RO, UV, and UF water purifiers with RO Support 365. Book your service today!
-                </p>
-                <!-- Buttons (Book Service, Call & WhatsApp) -->
-                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2">
-                    <a href="#contact" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition text-center">
-                        Book Service
-                    </a>
-                    <a href="https://wa.me/919876543210?text=Hi,%20I%20want%20to%20book%20a%20Water%20Purifier%20Service%20with%20RO%20Support%20365." target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 rounded-lg shadow-lg transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Chat
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right Custom Image Section -->
-            <div class="md:w-1/2 flex justify-center">
-                <div class="relative w-full max-w-md">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-400 to-cyan-300 rounded-2xl blur-lg opacity-30"></div>
-                    <div class="relative bg-white/10 p-3 rounded-2xl backdrop-blur-md shadow-2xl border border-white/20">
-                        <!-- यहाँ आपकी फोटो का लिंक जोड़ा गया है -->
-                        <img src="1000351676.jpg" alt="RO Support 365 Water Purifier Service" class="rounded-xl w-full h-[380px] object-cover shadow-md">
-                    </div>
-                </div>
+        <!-- Right Content (Water Purifier Image Box) -->
+        <div class="flex-1 w-full max-w-xl lg:max-w-none flex justify-center">
+            <div class="relative bg-white/90 backdrop-blur-xl p-10 rounded-3xl shadow-2xl border border-white w-full flex items-center justify-center min-h-[400px]">
+                <!-- यहाँ अपनी वाटर प्यूरीफायर इमेज का पाथ (src) दें -->
+                <img src="water-purifier.png" alt="RO Water Purifier" class="max-h-[380px] w-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500">
             </div>
         </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Core Services</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto mb-12">We provide repair and servicing for all brands of water purifiers (Kent, Aquaguard, Eureka Forbes, Livpure, etc.).</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-gray-100 text-left">
-                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-2xl mb-6">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">RO Repair & Service</h3>
-                    <p class="text-gray-600">Bad taste or unusual noise from your machine? Our experts arrive right at your doorstep to fix it.</p>
-                </div>
-                <!-- Service 2 -->
-                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-gray-100 text-left">
-                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-2xl mb-6">
-                        <i class="fa-solid fa-filter"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Filter & Parts Replacement</h3>
-                    <p class="text-gray-600">100% genuine spare parts including sediment filters, carbon filters, and RO membranes.</p>
-                </div>
-                <!-- Service 3 -->
-                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-gray-100 text-left">
-                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-2xl mb-6">
-                        <i class="fa-solid fa-house-chimney-medical"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Installation & AMC</h3>
-                    <p class="text-gray-600">Need a new RO installed or hassle-free yearly maintenance contracts (AMC)? We have affordable plans.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section id="why-us" class="py-20 bg-blue-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Us?</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto mb-12">Customer trust is our greatest asset.</p>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <i class="fa-solid fa-user-clock text-blue-600 text-3xl mb-3"></i>
-                    <h4 class="font-bold text-lg mb-1">Fast Service</h4>
-                    <p class="text-sm text-gray-600">Resolution within 2 hours of booking a complaint.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <i class="fa-solid fa-user-shield text-blue-600 text-3xl mb-3"></i>
-                    <h4 class="font-bold text-lg mb-1">Expert Technicians</h4>
-                    <p class="text-sm text-gray-600">Verified and professional experts.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <i class="fa-solid fa-tag text-blue-600 text-3xl mb-3"></i>
-                    <h4 class="font-bold text-lg mb-1">Affordable Pricing</h4>
-                    <p class="text-sm text-gray-600">Transparent charges with no hidden fees.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <i class="fa-solid fa-medal text-blue-600 text-3xl mb-3"></i>
-                    <h4 class="font-bold text-lg mb-1">Genuine Parts</h4>
-                    <p class="text-sm text-gray-600">Original spare parts for better performance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact / Booking Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Book a Service or Contact Us</h2>
-                <p class="text-gray-600">Fill out the form below and we will get back to you shortly.</p>
-            </div>
-            
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200">
-                <form action="#" method="POST" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
-                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" placeholder="John Doe">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Mobile Number</label>
-                            <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" placeholder="+91 98765 43210">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Selected Service</label>
-                        <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none">
-                            <option>RO Repair & Servicing</option>
-                            <option>Filter/Parts Replacement</option>
-                            <option>New RO Installation</option>
-                            <option>AMC Service</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Complete Address</label>
-                        <textarea rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:outline-none" placeholder="Enter your full address/location..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition shadow-md">
-                        Book Service Now
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-droplet text-blue-500 text-2xl"></i>
-                <span class="text-xl font-bold text-white">RO Support 365</span>
-            </div>
-            <p class="text-sm text-gray-400">© 2026 RO Support 365. All rights reserved.</p>
-            <div class="flex space-x-4 text-xl">
-                <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://wa.me/919876543210" target="_blank" class="hover:text-green-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+    </div>
+</section>
